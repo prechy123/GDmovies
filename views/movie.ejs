@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdmovies</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/HCcFn04/movies.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--header-->
+    <section id="hero">
+        <div class="banner"></div>
+        <div class="navbar">
+            <a href="http://127.0.0.1:5500/gdmovies.html"><img src="https://i.ibb.co/7KNpkpy/logo.png" class="logo" width="250" height="50"></a>
+            <ul>
+                <li><a href="#header" data-after="HOME">HOME</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">about</a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        <!--end header-->
+        <!--TITLe--->
+        <div class="header">
+            <h1> <span><%=theName%></span></h1>
+            <p><%=theDescription%></p>
+        </div>
+        <!--add youtube link later-->
+        <div class="download">
+            <h1><a href="<%=dLink%>">click me
+                    to download all</a></h1>
+        </div>
+    </section>
+    <!--End title-->
+    <!-- contact section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="contact-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://i.ibb.co/XXXXBbf/mail.png" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>gdmovies.site@gmail.com</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <form id="suggestion_box" action="https://formsubmit.co/gdmovies.site@gmail.com" method="POST">
+                    <h1>Suggestion Form</h1>
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <select name="Section">
+                        <option>Movies</option>
+                        <option>Tv series</option>
+                        <option>Anime</option>
+                        <option>Games</option>
+                    </select>
+                    <textarea name="massage" id="massage" cols="10" rows="5"
+                        placeholder="Write here your request or complain" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </div>
+    </section>
+    <!-- End contact section -->
+    <!--footer-->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>GD</span>movies</h1>
+            </div>
+            <h2>Free google drive download site</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="  https://i.ibb.co/4Pcmd7H/instagram.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://i.ibb.co/cxYC6sw/facebook.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://i.ibb.co/Jst9rXT/linkedin.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://i.ibb.co/r35C0sZ/whatsapp.png" /></a>
+                </div>
+            </div>
+            <p>copyright @ 2022 GDmovies. All rights reserved
+            </p>
+        </div>
+        </div>
+    </section>
+    <!--End footer -->
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+
+
+        <marquee bgcolor="#23395d" class="favour">ANIME: Chainsaw Man, One Piece, One Punch Man,
+            GAMES: Sleeping Dogs, Spider Man: Remastered, SIFU, 
+            MOVIES: Section 8, Black Adam, Disenchanted
+            TVSERIES: Rick and Morty, Pantheon, Wednesday, The Office
+        </marquee>
+        <header>
+            <img src="https://i.ibb.co/7KNpkpy/logo.png" class="logo" width="250" height="50">
+            <ul>
+                <li><a href="#hero" data-after="HOME">HOME</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#movie">Recent</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">about</a></li>
+            </ul>
+          </header>
+
+
+        <div class="container">
+            <div>
+                <h2>Welcome to<span></span></h2>
+                <h1>GDmovies <span></span></h1><br>
+                <form class="search-bar" action="/submit" method="post">
+                    <input type="text" name="searchContent" id="search-input" placeholder="ENTER MOVIE..." autocomplete="off">
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+        </div>
+
+        <%- include("partials/footer"); -%>

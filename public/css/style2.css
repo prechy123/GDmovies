@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: medium;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Section */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    width: 100px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(23, 33, 49);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* end header section*/
+/* start topic*/
+#hero {
+    background-image: linear-gradient(rgba(247, 247, 247, 0.9), rgba(0, 0, 0, 0.9)), url(https://i.ibb.co/X3Vjz8S/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+
+.header h1 {
+    font-size: larger;
+    color: black;
+}
+
+.header span {
+    font-size: large;
+    color: crimson;
+}
+
+.header p {
+    color: black;
+    font-weight: 800;
+    line-height: 1.2cm;
+}
+
+.download h1 {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    width: 100px;
+
+}
+
+.download h1 a {
+    text-decoration: none;
+    color: crimson;
+    text-transform: uppercase;
+}
+.vfavs {
+    height: 35px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgb(23, 33, 49);
+    color: white;
+    box-shadow: 0px 0px 1px 1px grey;
+    cursor: pointer;
+    
+}
+.vfavs:hover {
+    color: black;
+    background-color: crimson;
+    transition: 2s ease-in-out;
+
+}
+
+
+/*end start topic*/
+/* contact info section */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(247, 247, 247, 0.9), rgba(0, 0, 0, 0.9)), url(https://i.ibb.co/X3Vjz8S/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.contact-title span {
+    color: crimson;
+}
+
+#contact .contact-items {
+    width: 400px;
+}
+
+#contact .contact-item {
+    width: 80%;
+    padding: 20%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+
+#contact .contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: black;
+}
+
+.container {
+    max-width: 5000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#suggestion_box textarea,
+#suggestion_box button[type="submit"] {
+    font: 400 16px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#suggestion_box {
+    background: grey;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+#suggestion_box h3 {
+    color: black;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#suggestion_box h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+#suggestion_box h5 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 10px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#suggestion_box textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#suggestion_box textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#suggestion_box button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#suggestion_box button[type="submit"]:hover {
+    background: rgb(23, 33, 49);
+    -webkit-transition: background 1.3s ease-in-out;
+    -moz-transition: background 1.3s ease-in-out;
+    transition: background-color 1.3s ease-in-out;
+}
+
+#suggestion_box button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#suggestion_box input:focus,
+#suggestion_box textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+/* end contact info section */
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+    min-height: 150px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+/* end footer */
+
+/* end footer */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: crimson;
+}
+.suggestion_box {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    height: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    transition: 2.5s ease;
+    transition-property: background-color, color;
+}
+
+#suggestion_box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    margin: 50px 0;
+}
+
+/* contact info section */
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(247, 247, 247, 0.9), rgba(0, 0, 0, 0.9)), url(https://i.ibb.co/X3Vjz8S/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#contact img{
+    visibility: visible;
+}
+.contact-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.contact-title span {
+    color: crimson;
+}
+
+#contact .contact-items {
+    width: 400px;
+}
+
+#contact .contact-item {
+    width: 80%;
+    padding: 20%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+
+#contact .contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.brand {
+    color: crimson;
+    font-size: 2rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: black;
+}
+
+.container {
+    max-width: 5000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#suggestion_box textarea,
+#suggestion_box button[type="submit"] {
+    font: 400 16px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#suggestion_box {
+    background: grey;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+#suggestion_box h3 {
+    color: black;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#suggestion_box h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+#suggestion_box h5 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 10px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#suggestion_box textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#suggestion_box textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#suggestion_box button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#suggestion_box button[type="submit"]:hover {
+    background: rgb(23, 33, 49);
+    -webkit-transition: background 1.3s ease-in-out;
+    -moz-transition: background 1.3s ease-in-out;
+    transition: background-color 1.3s ease-in-out;
+}
+
+#suggestion_box button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#suggestion_box input:focus,
+#suggestion_box textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+/* end contact info section */
+/*for 700px*/
+@media only screen and (max-width:700px){
+    .navbar ul{
+        width: 100%;
+        position: absolute;
+        background-color: grey;
+        top: 75px;
+        left: 380px;
+        z-index: 1;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .container p{
+        visibility: hidden;
+    }
+    .container img{
+        visibility: hidden;
+    }
+    .menu-icon{
+        visibility: visible;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+}
